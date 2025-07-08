@@ -33,7 +33,7 @@ class Thread:
         elif isinstance(message, list):
             for msg in message:
                 self._add_message(msg)
-        else: # unreachable, theoretically ;)
+        else: 
             raise ValueError(
                 f"Expected message to be of type `dict` or `list`"
                 ", received `{type(message)}`"

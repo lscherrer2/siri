@@ -6,6 +6,7 @@ def todo ():
 
 class TestOpenAISchema(TestCase):
     def test_openai (self):
+        client = OpenAI(api_key = )
         todo()
 
 if __name__ == "__main__":
