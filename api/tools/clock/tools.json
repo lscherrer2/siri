@@ -1,0 +1,47 @@
+{
+    "tools": [
+        {
+            "type": "function",
+            "function": {
+                "name": "get_time",
+                "description": "get the user's local time",
+                "parameters": {
+                    "type": "object",
+                    "properties": { }
+                }
+            }
+        },
+        {
+            "type": "function",
+            "function": {
+                "name": "set_timer",
+                "description": "set a timer that goes off after the specified amount of time",
+                "parameters": {
+                    "type": "object",
+                    "properties": {
+                        "hours": {"type": "integer"},
+                        "minutes": {"type": "integer"},
+                        "seconds": {"type": "integer"}
+                    }
+                }
+            }
+        },
+        {
+            "type": "function",
+            "function": {
+                "name": "set_alarm",
+                "description": "set an alarm for an exact time of day",
+                "parameters": {
+                    "type": "object",
+                    "properties": {
+                        "hour": {
+                            "type": "integer",
+                            "description": "hour in military time (1-24)"
+                        },
+                        "minute": { "type": "integer" }
+                    }
+                }
+            }
+        }
+    ]
+}

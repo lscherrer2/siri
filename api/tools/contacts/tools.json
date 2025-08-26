@@ -1,0 +1,45 @@
+{
+    "tools": [
+        {
+            "type": "function",
+            "function": {
+                "name": "search_contacts",
+                "description": "Look up user contacts. Use this to find exact spellings",
+                "parameters": {
+                    "type": "object",
+                    "properties": {
+                        "name": {
+                            "type": "string",
+                            "description": "the name to search for"
+                        },
+                        "max_results": {
+                            "type": "integer",
+                            "default": 10
+                        }
+                    }
+                },
+                "required": ["name"]
+            }
+        },
+        {
+            "type": "function",
+            "function": {
+                "name": "get_contact_details",
+                "parameters": {
+                    "type": "object",
+                    "properties": {
+                        "first_name": {
+                            "type": "string",
+                            "description": "The exact first name of the contact. If the exact name/spelling is not known, search contacts."
+                        },
+                        "last_name": {
+                            "type": "string",
+                            "description": "The exact last name of the contact."
+                        }
+                    },
+                    "required": ["first_name", "last_name"]
+                }
+            }
+        }
+    ]
+}

@@ -1,0 +1,15 @@
+{
+    "tools": [
+        {
+            "type": "function",
+            "function": {
+                "name": "request_follow_up",
+                "description": "request details from the user, allowing them to provide information",
+                "parameters": {
+                    "type": "object",
+                    "properties": { }
+                }
+            }
+        }
+    ]
+}

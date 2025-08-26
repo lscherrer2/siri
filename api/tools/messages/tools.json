@@ -1,0 +1,24 @@
+{
+    "tools": [
+        {
+            "type": "function",
+            "function": {
+                "name": "send_message",
+                "parameters": {
+                    "type": "object",
+                    "properties": {
+                        "recipient_first_name": {
+                            "type": "string",
+                            "description": "the exact first name of the recipient"
+                        },
+                        "recipient_last_name": {
+                            "type": "string",
+                            "description": "the exact last name of the recipient"
+                        }
+                    }
+                },
+                "required": ["recipient_first_name", "recipient_last_name"]
+            }
+        }
+    ]
+}
